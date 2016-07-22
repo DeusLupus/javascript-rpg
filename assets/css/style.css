@@ -1,0 +1,15 @@
+body {
+	background-image: url("../images/xmenalphacover.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 2%;
+}
+
+h3 {
+	color: black;
+	font-weight: bold;
+}
+
+#players {
+	padding: 1%;
+}
