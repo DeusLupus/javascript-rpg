@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 			var $counter = $("<p>").addClass("counter text-center").html("Counter: " + characters[index].CATK);
 
-			var $characterDiv = $("<div>").addClass("character clearfix")
+			var $characterDiv = $("<div>").addClass("character col-sm-3")
 								.append($characterPic, $characterName, $hitpoints, $attack, $counter)
 								.one("click", playerSelect);
 
@@ -66,6 +66,7 @@ $(document).ready(function() {
 
 	//enemy select
 	function enemySelect (event) {
+		$("#cpu").html("CPU")
 		$(this).appendTo("#cpu");
 		$("#pool").children().unbind("click", enemySelect);
 	}

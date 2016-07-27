@@ -3,7 +3,7 @@ body {
 	background-repeat: repeat;
 	background-size: 100%;
 	margin: 2%;
-	color: black;
+	color: white;
 	font-weight: bolder;
 }
 
@@ -20,19 +20,8 @@ h3 {
 	color: red;
 }
 
-/*.character {
-	float: left;
-}
-
-.clearfix:after {
-   content: " "; 
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}*/
-
 .pic {
-	width: 20%;
-	align-content: center;
+	width: 50%;
+	height: 100%;
+	float: left;
 }
