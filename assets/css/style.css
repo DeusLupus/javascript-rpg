@@ -1,15 +1,38 @@
 body {
 	background-image: url("../images/xmenalphacover.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: 100%;
 	margin: 2%;
+	color: black;
+	font-weight: bolder;
 }
 
-h3 {
+h1 {
 	color: black;
 	font-weight: bold;
 }
 
-#players {
-	padding: 1%;
+h1 small {
+	color: red;
+}
+
+h3 {
+	color: red;
+}
+
+/*.character {
+	float: left;
+}
+
+.clearfix:after {
+   content: " "; 
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}*/
+
+.pic {
+	width: 20%;
+	align-content: center;
 }

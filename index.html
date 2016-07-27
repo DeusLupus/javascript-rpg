@@ -11,30 +11,22 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
 	<!--personal style sheet-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<h3>Choose your Player!</h3>
-	<div class="row" id="players">
-		<div class="col-lg-3">
-			<img src="assets/images/magneto.jpg" width="20%" height="5%" alt="Magneto">
-		</div>
-		<div class="col-lg-3">
-			<img src="assets/images/apocalypse.jpg" width="20%" height="5%" alt="Apocalyse">
-		</div>
-		<div class="col-lg-3">
-			<img src="assets/images/sinister.jpg" width="20%" height="5%" alt="Mr Sinister">
-		</div>
-		<div class="col-lg-3">
-			<img src="assets/images/holocaust.png" width="20%" height="5%" alt="Holocaust">
-		</div>
+	<div class="page-header">
+	  <h1>X-Men <small>Age of Apocalypse</small></h1>
 	</div>
-	<div class="row">
-		  <button type="button" class="btn btn-default">Attack</button>
+	<div id="characters">
+		<div id="user"></div>
+		<div id="pool"></div>
+		<div id="cpu"></div>
 	</div>
+	
+	<footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="assets/javascript/game.js"></script>
+	</footer>
 </body>
 </html>
