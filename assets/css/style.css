@@ -1,14 +1,14 @@
 body {
-	background-image: url("../images/xmenalphacover.jpg");
+	background-image: url("../images/XMenAofA2.jpg");
 	background-repeat: repeat;
 	background-size: 100%;
 	margin: 2%;
-	color: white;
+	color: #b67b0e;
 	font-weight: bolder;
 }
 
 h1 {
-	color: black;
+	color: white;
 	font-weight: bold;
 }
 
@@ -17,11 +17,28 @@ h1 small {
 }
 
 h3 {
-	color: red;
+	color: gray;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .pic {
-	width: 50%;
-	height: 100%;
+	width: 100px;
+	height: 150px;
 	float: left;
+}
+
+.character {
+	margin: 1% 0;
+}
+
+#characters {
+	margin: 1%;
+	height: 25%;
 }
