@@ -60,7 +60,9 @@ $(document).ready(function() {
 	function playerSelect (event) {
 		$("#user").html("<h3>Player 1</h3>");
 		$(this).appendTo("#user");
-		user = $(".character.name");
+		// use $(this).find*('.name')
+		// This is the element that was clicked.
+		user = $(this).find(".name").html();
 		console.log("user " + user);
 		$("#pool").children().unbind("click", playerSelect);
 		$("#pool").children().one("click", enemySelect);
@@ -70,6 +72,8 @@ $(document).ready(function() {
 	function enemySelect (event) {
 		$("#cpu").html("<h3>CPU</h3>");
 		$(this).appendTo("#cpu");
+		cpu = user = $(this).find(".name").html();
+		console.log("cpu " + cpu);
 		var $battle = $("<button>").addClass("atkbtn btn btn-primary btn-lg").html("Attack!");
 		$("#cpu").append($battle);
 		$("#pool").children().unbind("click", enemySelect).hide();
