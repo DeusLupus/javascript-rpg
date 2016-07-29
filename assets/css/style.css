@@ -20,6 +20,10 @@ h3 {
 	color: gray;
 }
 
+button {
+	float: right;
+}
+
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
@@ -41,4 +45,18 @@ h3 {
 #characters {
 	margin: 1%;
 	height: 25%;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.shown {
+	visibility: show;
+}
+
+#results {
+	color: white;
+	font-weight: bold;
+	text-align: center;
 }

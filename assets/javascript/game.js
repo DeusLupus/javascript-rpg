@@ -33,6 +33,10 @@ $(document).ready(function() {
 	//set variables for user and cpu when starting game
 	var user;
 	var cpu;
+	var atk;
+	var userHP;
+	var cpuHP;
+	var cpuatk;
 
 	//add characters to html
 	var addplayers = function () {
@@ -64,6 +68,13 @@ $(document).ready(function() {
 		// This is the element that was clicked.
 		user = $(this).find(".name").html();
 		console.log("user " + user);
+		// set user variables for atk and hp
+		var atkdata = $("#user").find(".atkpwr").text();
+		atk = atkdata.split(":").pop();
+		console.log("atk " + atk);
+		var hpdata = $("#user").find(".hitpoints").text();
+		userHP = hpdata.split(":").pop();
+		console.log("User HP " + userHP);
 		$("#pool").children().unbind("click", playerSelect);
 		$("#pool").children().one("click", enemySelect);
 	}
@@ -72,19 +83,31 @@ $(document).ready(function() {
 	function enemySelect (event) {
 		$("#cpu").html("<h3>CPU</h3>");
 		$(this).appendTo("#cpu");
-		cpu = user = $(this).find(".name").html();
+		cpu = $(this).find(".name").html();
 		console.log("cpu " + cpu);
+		// set cpu atk and hp
+		var atkdata = $("#cpu").find(".counter").text();
+		cpuatk = atkdata.split(":").pop();
+		console.log("Counter " + cpuatk);
+		var hpdata = $("#cpu").find(".hitpoints").text();
+		cpuHP = hpdata.split(":").pop();
+		console.log("CPU HP " + cpuHP);
 		var $battle = $("<button>").addClass("atkbtn btn btn-primary btn-lg").html("Attack!");
 		$("#cpu").append($battle);
 		$("#pool").children().unbind("click", enemySelect).hide();
-	}
 
-	//battle!!!
-	$(".atkbtn").on("click", function () {
-		if ($("#cpu"),children().length !==0){
-			var atkmsg = "You attacked for "
-		}
-	});
+		//battle!!!
+		$(".atkbtn").on("click", function () {
+			if (userHP > 0 ) {	
+				var atkmsg = "You attacked " + cpu + " for " + atk;
+				//console.log(atkmsg);
+				var catkmsg = cpu + " countered for " + cpuatk;
+				$("#results").removeClass("hidden").addClass("shown").find;
+				$("#m1").html(atkmsg);
+				$("#m2").html(catkmsg);
+			}
+		});
+	}
 
 	addplayers();
 	})
